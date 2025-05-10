@@ -17,7 +17,7 @@ const MaskedView = ({
   };
   useEffect(() => {
     const observer = new ResizeObserver(snapShot);
-    observer.observe(maskRef.current!);
+    observer.observe(maskRef.current);
     return () => {
       observer.disconnect();
     };
